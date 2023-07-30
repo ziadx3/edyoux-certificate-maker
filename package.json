@@ -1,0 +1,23 @@
+{
+  "name": "certificatemaker",
+  "version": "1.0.0",
+  "description": "certficate app",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "deploy-python-script-dev": "scp /Users/mac/Desktop/edyoux/edyoux-backend/edyoux-certificate-maker/generatecert.py root@209.38.240.141:/root/server",
+    "deploy-js-script-dev": "scp /Users/mac/Desktop/edyoux/edyoux-backend/edyoux-certificate-maker/index.js root@209.38.240.141:/root/server",
+    "deploy-dev": "scp -R /Users/mac/Desktop/edyoux/edyoux-backend/edyoux-certificate-maker/* root@209.38.240.141:/root/server",
+    "deploy-python-script-prod": "scp /Users/mac/Desktop/edyoux/edyoux-backend/edyoux-certificate-maker/generatecert.py root@104.248.18.165:/root/server",
+    "deploy-js-script-prod": "scp /Users/mac/Desktop/edyoux/edyoux-backend/edyoux-certificate-maker/index.js root@104.248.18.165:/root/server",
+    "deploy-prod": "scp -r /Users/mac/Desktop/edyoux/edyoux-backend/edyoux-certificate-maker/* root@104.248.18.165:/root/server",
+    "pull": "scp -r root@146.190.112.238:/root/server/ojidawoijdowjadijgawo /Users/mac/Desktop/expressapp"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "docxtemplater": "^3.36.1",
+    "express": "^4.18.2",
+    "python-shell": "^5.0.0"
+  }
+}
